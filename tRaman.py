@@ -6,8 +6,8 @@ import math
 
 #Dados de entrada
 h = 6.62607015e-34      #J.s
-Is=45.0523              #Intensidade stoken do pico
-Ias=17.8961             #Intensidade anti-stoken do pico 
+Is=45.0523              #Intensidade stokes do pico
+Ias=17.8961             #Intensidade anti-stokes do pico 
 kb=1.38065e-23          #J/K
 llnm=633                #comprimento de onda do laser (nm) 
 k=218                   #número de onda (cm-1) 
@@ -17,7 +17,7 @@ c = 299792458           #velocidade da luz (m/s)
 #
 pi = math.asin(1.0)*2.0 #valor de pi em radianos   
 #     
-llm=llnm*10**-9         #conversao do lambda em (nm) para (1/metros)
+llm=llnm*10**-9         #conversao do comprimento de onda (nm) para (1/metros)
 #
 km=k*(1/(10**-2))       #conversao do numero de onda em (1/metros)
 #

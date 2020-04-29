@@ -25,7 +25,7 @@ km=k*(1/(10**-2))       #conversao do numero de onda em (1/metros)
 #
 lvm=1/km                #calculo do comprimento de onda de vibração em (1/metros)
 #
-r=Ins/Inas
+r=ins/inas
 #
 #Calculos dos Logaritmos neperianos dos termos
 lnsas = math.log(r)
@@ -40,8 +40,8 @@ print ('Data: 2019/11/03')
 print ('')
 print ('Dados de entrada:')
 print ('Constante de planck',h)
-print ('Intensidade stokes',Ins)
-print ('Intensidade anti-stokes',Inas)
+print ('Intensidade stokes',ins)
+print ('Intensidade anti-stokes',inas)
 print ('Constante de Boltzman',kb)
 print ('Comprimento de onda do laser:',llnm,('(nm)'))
 print ('Número de onda:',k,('(1/cm)'))

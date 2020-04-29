@@ -34,7 +34,7 @@ lnl = math.log((((1/llm)-(1/lvm))**4)/(((1/llm)+(1/lvm))**4))
 T = h*c*km/(kb*(lnsas-lnl))
 #
 #Saída do programa
-print ('Programa tRaman - Cálculo da temperatura da amostra')
+print ('\nPrograma tRaman - Cálculo da temperatura da amostra')
 print ('Autor: Pojucan M.M.S.')
 print ('Data: 2019/11/03')
 print ('\nDados de entrada:')

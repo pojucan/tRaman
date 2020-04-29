@@ -1,13 +1,15 @@
-#Determinação da temperatura por Espectroscopia Raman
-#Autor: Pojucan M.M.S.
-#Data: 2019/11/03
-
+# Determinação da temperatura por Espectroscopia Raman
+# Autor: Pojucan M.M.S.
+# Data: 2019/11/03
 import math
-
+#
 #Dados de entrada
+ins = float(input('\nDigite o valor da intensidade Stokes do pico: '))
+inas = float(input('\nDigite o valor da intensidade anti-Stokes do pico: '))
+
 h = 6.62607015e-34      #J.s
-Is=45.0523              #Intensidade stokes do pico
-Ias=17.8961             #Intensidade anti-stokes do pico 
+# Is=45.0523            Intensidade stokes do pico
+# Ias=17.8961           Intensidade anti-stokes do pico 
 kb=1.38065e-23          #J/K
 llnm=633                #comprimento de onda do laser (nm) 
 k=218                   #número de onda (cm-1) 
@@ -23,7 +25,7 @@ km=k*(1/(10**-2))       #conversao do numero de onda em (1/metros)
 #
 lvm=1/km                #calculo do comprimento de onda de vibração em (1/metros)
 #
-r=Is/Ias
+r=Ins/Inas
 #
 #Calculos dos Logaritmos neperianos dos termos
 lnsas = math.log(r)
@@ -38,8 +40,8 @@ print ('Data: 2019/11/03')
 print ('')
 print ('Dados de entrada:')
 print ('Constante de planck',h)
-print ('Intensidade stokes',Is)
-print ('Intensidade anti-stokes',Ias)
+print ('Intensidade stokes',Ins)
+print ('Intensidade anti-stokes',Inas)
 print ('Constante de Boltzman',kb)
 print ('Comprimento de onda do laser:',llnm,('(nm)'))
 print ('Número de onda:',k,('(1/cm)'))
